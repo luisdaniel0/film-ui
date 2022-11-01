@@ -25,7 +25,7 @@ function App() {
   console.log(films)
   return (
     <div className="container">
-      <FilmGrid />
+      <FilmGrid isLoading={isLoading} films={films} />
 
     </div>
   );
