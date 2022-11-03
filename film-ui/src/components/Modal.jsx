@@ -1,14 +1,20 @@
 import React from 'react'
+import FilmGrid from './FilmGrid'
 
-function Modal() {
+function Modal({film,poster}) {
   return (
-    <div className="modal">
-      <div className="modal-content">
-        <div className="modal-header">
-          <h4 className="modal-title"></h4>
+    <div className="modalBackground">
+      <div className="modalContainer">
+        <button> X </button>
+        <div className="title">
+          <h1></h1>
         </div>
-        <div className="modal-footer">
-          <button className="button"> Close</button>
+        <div className="modalBody">
+          <p>movie description</p>
+          <div className="modalFooter">
+            <button>Cancel</button>
+            <button>Continue</button>
+          </div>
         </div>
       </div>
     </div>
